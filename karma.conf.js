@@ -28,8 +28,15 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, './coverage/ngv'),
       subdir: '.',
       reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
+        { type: 'html' ,dir: 'coverage'},
+        { type: 'text-summary' },
+        , {
+          type: 'lcovonly',
+          subdir: 'report-lcov'
+        },{
+          type: 'text-summary'
+        },
+        { type: 'cobertura', subdir: '.', file: 'cobertura.xml' }
       ],
 
     },
