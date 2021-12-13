@@ -12,7 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "sonar": "sonar-scanner",
-    "nyc": "nyc"
+    "nyc": "nyc",
+    "coverage": "npm test – --coverage --watchAll=false"
   },
   "private": true,
   "dependencies": {
