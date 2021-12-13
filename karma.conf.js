@@ -35,7 +35,7 @@ module.exports = function (config) {
         },{
           type: 'text-summary'
         },
-        { type: 'cobertura', subdir: '.', file: 'cobertura.xml' }
+        { type: 'cobertura', subdir: '.', file: 'coverage.xml' }
       ],
 
     },
