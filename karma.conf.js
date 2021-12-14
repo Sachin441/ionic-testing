@@ -24,23 +24,23 @@ module.exports = function (config) {
     jasmineHtmlReporter: {
       suppressAll: true // removes the duplicated traces
     },
-    coverageReporter: {
-      dir: 'coverage/',
-      reporters: [
-        { type: 'html' ,dir: 'coverage'},
-        { type: 'text-summary' },
-        , {
-          type: 'lcovonly',
-          subdir: 'report-lcov'
-        },{
-          type: 'text-summary'
-        },
-        { type: 'cobertura', subdir: '.', file: 'coverage.xml' }
-      ],
-
-    },
+      coverageReporter: {
+        dir: 'coverage/',
+        reporters: [
+          { type: 'html' ,dir: 'coverage'},
+          { type: 'text-summary' },
+          {
+            type: 'lcovonly',
+            subdir: 'report-lcov'
+          },
+          {
+            type: 'text-summary'
+          },
+          { type: 'cobertura', subdir: '.', file: 'coverage.xml' }
+        ]
+      },
     reporters: ['progress', 'kjhtml'],
-    port: 9876,
+    port:9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
