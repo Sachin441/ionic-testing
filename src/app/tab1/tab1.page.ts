@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -8,14 +7,10 @@ import { ApiService } from 'src/app/services/api.service';
 export class Tab1Page {
   jobName='sachin';
   jobs=[];
-  constructor(private apiService: ApiService) {
-    this.jobs = this.apiService.getJobs();
-  }
-    // constructor(){}
+    constructor(){}
 
   addJob(job: string){
-    // this.jobs.push(job);
-    this.apiService.addJob(job);
+    this.jobs.push(job);
   }
 
 }
