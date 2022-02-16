@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class Tab1Page {
   jobName='sachin';
   jobs=[];
-    constructor(){}
+  // constructor(){}
 
   addJob(job: string){
     this.jobs.push(job);
