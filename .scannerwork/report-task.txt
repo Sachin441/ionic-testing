@@ -2,5 +2,5 @@ projectKey=ionic-testing
 serverUrl=http://localhost:9000
 serverVersion=9.1.0.47736
 dashboardUrl=http://localhost:9000/dashboard?id=ionic-testing
-ceTaskId=AX8XFr0Rpl_CqIhCH8Pq
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX8XFr0Rpl_CqIhCH8Pq
+ceTaskId=AX8XO8dspl_CqIhCH8P8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX8XO8dspl_CqIhCH8P8
